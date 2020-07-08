@@ -1,0 +1,10 @@
+
+eureka:
+  client:
+    register-with-eureka: false  #不向eureka中注册自己
+    service-url:
+      defaultZone: http://lingzun1.com:7001/eureka/,http://lingzun2.com:7002/eureka/,http://lingzun3.com:7003/eureka/
+#  开启降级feign.hystrix
+feign:
+  hystrix:
+    enabled: true

@@ -1,0 +1,13 @@
+server:
+  port: 7003
+
+#  Eureka配置
+eureka:
+  instance:
+    hostname: lingzun3.com   #eureka服务端的实例名称
+  client:
+    register-with-eureka: false     #是否向eureka注册自己
+    fetch-registry: false  #如果为false  则表示自己为注册中心
+    service-url:  #与eureka服务中心交互的地址   监控页面
+      defaultZone: http://lingzun2.com:7002/eureka/,http://lingzun1.com:7001/eureka/
+#        http://${eureka.instance.hostname}:${server.port}/eureka/

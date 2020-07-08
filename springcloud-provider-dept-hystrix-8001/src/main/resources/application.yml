@@ -1,0 +1,10 @@
+#eureka配置相关，服务注册到哪里
+eureka:
+  client:
+    service-url:
+      defaultZone: http://lingzun1.com:7001/eureka/,http://lingzun3.com:7003/eureka/,http://lingzun2.com:7002/eureka/
+  instance:
+    instance-id: springcloud-provider-dept-hystrix-8001  #修改eureka上的默认描述信息
+info:
+  app.name: lingzundaren-springcloud
+  company.name: blog.lingzun.com
